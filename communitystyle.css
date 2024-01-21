@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color:#fffafa;
+    position:fixed;
+}
+.header .logo img{
+    width: 150px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 10px;
+
+}
+.navbar a {
+    background-image: linear-gradient(
+      to right,
+      #4D2C5E,
+      #4D2C5E 50%,
+      #383838 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 5px 0px 30px;
+}
+.navbar a:before{
+    content: '';
+    background: #4D2C5E;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+   background-position: 0;
+}
+.navbar a:hover::before{
+    width: 100%;
+  }
+.head{
+    padding-top:35px;
+    top:15px;
+    margin:50px;
+    font-size:45px;
+    margin-left:35%;;
+}
+span{
+    font-weight: bold;;
+}
+.t1{
+    border:3px dotted black;
+    margin:23px;
+    width:85%;
+    justify-content:center;
+    padding:10px;
+    margin-left:55px;
+}
+.t1Head{
+    font-size: 22px;
+}
+.pages{
+    text-align: center;
+    padding-bottom: 45px;
+    padding-top: 5%;
+}
+.pages a{
+    text-decoration: none;
+    background-color: #183383;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color:#fff;
+    font-weight: 800px;
+}
+.pages a i{
+    font-size: 16px;
+    font-weight: 600px;
+}

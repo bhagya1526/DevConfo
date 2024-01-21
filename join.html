@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="join.css">
+    <title>Join a Team</title>
+    <!-- Include your CSS file if you have one -->
+    <!-- <link rel="stylesheet" href="your-styles.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <header class="header">
+            <a href="home.html" class="logo"><img src="images/logo.png" alt=""></a>
+              <nav class="navbar">
+                  <a href="home.html">HOME</a>
+                  <a href="about.html">ABOUT</a>
+                  <a href="contact.html">CONTACT</a>
+                  <a href="login.html">SIGN UP</a>
+                  <a href="login.html">LOGIN</a>
+              </nav>
+          </header>
+        </div>
+    <div class="title"><h1 >Join a Team</h1></div>
+    <main>
+        <section>
+            
+            <h2>Available</h2>
+            <ul>
+                <!-- List of available teams with join buttons -->
+                <li>
+                    <span>NAME: Austin</span><br>
+                    <p>Title: Android Development</p>
+                    <p>required Role: Flutter Developer</p><br>
+                    <button onclick="ReadMore">ReadMore</button>
+                    <button onclick="joinTeam('Team A')">Join</button>
+                </li>
+                <li>
+                    <span>NAME: Steve</span>
+                    <p>Title: Mern Development</p>
+                    <p>required Role: Back-end Developer</p>
+                    <button onclick="ReadMore">ReadMore</button>
+                    <button onclick="joinTeam('Team A')">Join</button>
+                </li>
+                <li>
+                    <span>NAME: John Cena</span>
+                    <p>Title:Block Chain</p>
+                    <p>required Role: Assistant manager  </p>
+                    <button onclick="ReadMore">ReadMore</button>
+                    <button onclick="joinTeam('Team A')">Join</button>
+                </li>
+                <li>
+                    <span>NAME:Rani</span>
+                    <p>Title:  web portal (Agriculture) </p>
+                    <p>required Role:FullStack Developer</p>
+                    <button onclick="ReadMore">ReadMore</button>
+                    <button onclick="joinTeam('Team A')">Join</button>
+                </li>
+                <li>
+                    <span>NAME: Bhavya</span>
+                    <p>Title: Machine Learning</p>
+                    <p>required Role:Python Developer</p>
+                    <button onclick="ReadMore">ReadMore</button>
+                    <button onclick="joinTeam('Team A')">Join</button>
+                </li>
+                <li>
+                    <span>NAME: Shane Tiat</span>
+                    <p>Title: Android Development</p>
+                    <p>required Role:Dart Net </p>
+                    <button onclick="ReadMore">ReadMore</button>
+                    <button onclick="joinTeam('Team A')">Join</button>
+                </li>
+                <!-- Add more teams as needed -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Teams</h2>
+            <ul>
+                <!-- List of teams the user has joined -->
+                <!-- Displayed after joining a team -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+
+    <script>
+        // JavaScript function to handle team joining
+        function joinTeam(teamName) {
+            const teamList = document.querySelector('#your-teams-list');
+            const listItem = document.createElement('li');
+            listItem.textContent = teamName;
+            teamList.appendChild(listItem);
+        }
+    </script>
+
+</body>
+</html>
